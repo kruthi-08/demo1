@@ -1,0 +1,16 @@
+import pandas as pd 
+import matplotlib.pyplot as plt
+df=pd.read_csv("C:\\Users\\KRUTHIKAMANVI\\OneDrive\\Desktop\\km.csv")
+print(df)
+plt.hist(df['mpg'])
+plt.show()
+plt.scatter(df['wt'],df['mpg'])
+plt.xlabel('wt')
+plt.ylabel('mpg')
+plt.show()
+plt.bar(df['am'],df['hp'])
+plt.xlabel('am')
+plt.ylabel('hp')
+plt.show()
+plt.boxplot(df['mpg'])
+plt.show()
